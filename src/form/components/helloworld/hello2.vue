@@ -1,20 +1,10 @@
 <template>
-  <div>
-    Hello World!
-    <hello2></hello2>
-  </div>
+  <div>Hello World!2222222</div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Hello2 from "./hello2.vue";
-
-@Component({
-  name: "form-module",
-  components: {
-    Hello2
-  }
-})
+@Component
 export default class HelloWorld extends Vue {
   created() {}
 }

@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+import '../common/styles/base.less';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
@@ -13,6 +14,8 @@ export default class App extends Vue {}
 </script>
 
 <style lang="less">
+@import '../common/styles/class.less';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

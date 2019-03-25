@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import App from './wrapper/App.vue';
+import Layout from './wrapper/Layout.vue';
 import routes from './wrapper/router';
 import store from './wrapper/store';
 
+// util.js是通过store来传入,还是window.super.util
 Vue.config.productionTip = false;
 
 Vue.use(Router);
-
 
 const router = new Router({
   routes
@@ -21,5 +21,5 @@ router.beforeEach((from: any, to: any, next: any) => {
 new Vue({
   router,
   store, // 此处考虑模块的动态按需加载
-  render: h => h(App),
+  render: h => h(Layout),
 }).$mount('#app');
