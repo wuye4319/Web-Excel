@@ -1,32 +1,19 @@
+import { Store } from 'vuex';
+import actions from './actions';
+import mutations from './mutations';
+import Form from '@/form/store';
+import getters from './getters';
 
-import Vue from 'vue';
-import Vuex from 'vuex';
-import FormModule from '@/form/store';
+export class GlobalState {
+  foo: string = '';
+}
 
-Vue.use(Vuex);
-
-const state: any = {
-
-};
-
-const mutations: any = {
-
-};
-
-const actions:any = {
-
-};
-
-const getters: any = {
-
-};
-
-export default new Vuex.Store({
+export default new Store<GlobalState>({
   modules: {
-    FormModule
+    Form,
   },
-  state,
+  state: new GlobalState(),
   mutations,
   actions,
-  getters
+  getters,
 });

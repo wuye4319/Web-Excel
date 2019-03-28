@@ -1,23 +1,16 @@
-const state: any = {
+import { Module } from 'vuex';
+import actions from './actions';
+import mutations from './mutations';
 
-};
+export class DemoState {
+  foo: string = '';
+}
 
-const mutations: any = {
-
-};
-
-const actions:any = {
-
-};
-
-const getters:any = {
-
-};
-
-export default {
+const demoModule: Module<DemoState, any> = {
   namespaced: true,
-  state,
+  state: new DemoState(),
   mutations,
   actions,
-  getters
-}
+};
+
+export default demoModule;

@@ -2,7 +2,7 @@ export default [{
   path: '/form',
   name: 'form',
   meta: {
-    title: '表单'
+    title: '表单',
   },
-  component: () => import('@/form/pages/index.vue')
+  component: () => import('@/form/pages/index.vue'),
 }];
