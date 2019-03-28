@@ -4,21 +4,22 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-import HelloWorld from "@/form/components/helloworld";
-import { test } from "../service/page";
+<script lang='ts'>
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import HelloWorld from '@/form/components/helloworld';
+import { test } from '../service/page';
 
 @Component({
-  name: "form-module",
+  name: 'form-module',
   components: {
-    HelloWorld // 怎么设置参数
-  }
+    HelloWorld, // 怎么设置参数
+  },
 })
 export default class FormModule extends Vue {
+  foo: string = '';
+
   created() {
-    let data = test("123");
-    console.log(data);
+    this.foo = 'test';
   }
 }
 </script>

@@ -7,10 +7,12 @@
 
 <script lang="ts">
 import '../common/styles/base.less';
+import { State } from 'vuex-class';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class App extends Vue {}
+export default class Layout extends Vue {
+}
 </script>
 
 <style lang="less">
