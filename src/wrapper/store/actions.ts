@@ -1,5 +1,5 @@
 import { ActionTree } from 'vuex';
-import { GlobalState } from './index';
+import { GlobalState } from '.';
 import { GlobalAction } from './types';
 
 const actions: ActionTree<GlobalState, GlobalState> = {

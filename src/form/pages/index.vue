@@ -6,8 +6,8 @@
 
 <script lang='ts'>
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/form/components/helloworld';
-import { test } from '../service/page';
+import HelloWorld from '@/form/components/index';
+import { test } from '../service';
 
 @Component({
   name: 'form-module',

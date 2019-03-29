@@ -1,9 +1,9 @@
 import { ActionTree } from 'vuex';
-import { DemoModuleState } from '.';
-import { DemoState } from '../index';
+import { DemoState } from './index';
 import { DemoAction } from './types';
+import { GlobalState } from '@/wrapper/store';
 
-const actions: ActionTree<DemoModuleState, GlobalState> = {
+const actions: ActionTree<DemoState, GlobalState> = {
 
 };
 

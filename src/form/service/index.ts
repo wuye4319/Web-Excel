@@ -3,7 +3,7 @@
  */
 
 // import { fetch } from '../util'
-import APIRoot from './common'
+import APIRoot from '@/common/config/env'
 
 /** 获取用户数据 **/
 export function getUserInfo() {

@@ -1,5 +1,5 @@
 import { GetterTree } from 'vuex';
-import { GlobalState } from './index';
+import { GlobalState } from '.';
 
 const getters: GetterTree<GlobalState, GlobalState> = {
   bar(state) {
