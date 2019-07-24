@@ -4,7 +4,13 @@ import { GlobalMutation } from './types';
 
 const mutations: MutationTree<GlobalState> = {
   [GlobalMutation.Example](state, payload) {
-    state.foo = '';
+    state.foo = payload.value;
+  },
+  [GlobalMutation.data](state, payload) {
+    state.data = Object.assign({}, payload);
+  },
+  [GlobalMutation.buffer](state, payload) {
+    state.buffer = Object.assign({}, payload);
   }
 };
 

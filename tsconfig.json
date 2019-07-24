@@ -1,24 +1,26 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
-    "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "esModuleInterop": true,
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,    
     "noImplicitAny": false,
+    "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
+    "typeRoots": [
+      "node_modules/@types",
+      "src/sheet/typings",
+      "src/app/typings",
+      "src/common/typings",
     ],
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
     },
     "lib": [
       "esnext",

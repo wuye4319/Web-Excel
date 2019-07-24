@@ -1,9 +1,13 @@
+node_modules
+.package-lock.json
+
+.history/
 .DS_Store
 node_modules
 /dist
-.history
-.gitignore
-package-lock.json
+node_modules
+node_modules
+mockserver/package-lock.json
 
 # local env files
 .env.local
@@ -16,9 +20,13 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
-.vscode
+.vscode/launch.json
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
+*.sw?
+
+inspect.js
+env.local.json
+

@@ -1,7 +1,5 @@
-export enum GlobalAction {
-  Example = 'example'
-}
-
 export enum GlobalMutation {
-  Example = 'example'
+  Example = 'foo',
+  data = 'data',
+  buffer = 'buffer'
 }
